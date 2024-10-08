@@ -18,9 +18,9 @@ const Home: React.FC = () => {
     return (
         <>
             <NavMenu />
-            <Content style={{ backgroundColor: '#25102b', display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', flexDirection: 'column' }}>
+            <Content style={{ backgroundColor: 'rgba(10,10,112)', display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', flexDirection: 'column' }}>
                 <Row>
-                    <Title style={{ color: 'white' }}>An Easy Solution for Remote Examinations</Title>
+                    <Title style={{ color: 'white' }}>An Self-hosting Quiz Platform</Title>
                 </Row>
                 <Row>
                     {
@@ -32,7 +32,7 @@ const Home: React.FC = () => {
                     }
                 </Row>
             </Content>
-            <Footer style={{ textAlign: 'center' }}>Exco ©2022 Created by Abrar Mahmud</Footer>
+            <Footer style={{ textAlign: 'center' }}>EduQuiz ©2024</Footer>
         </>
     );
 };

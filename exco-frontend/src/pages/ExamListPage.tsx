@@ -91,7 +91,7 @@ const ExamListPage: React.FC = () => {
         <>
             <NavMenu selected="exams" />
             <Content className="contentjam">{toDisplay}</Content>
-            <Footer style={{ textAlign: 'center' }}>EduQuiz</Footer>
+            <Footer style={{ textAlign: 'center' }}>EduQuiz ©2024</Footer>
         </>
     );
 };
