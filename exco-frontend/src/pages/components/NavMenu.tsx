@@ -1,4 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+// import React from 'react';
+// import { Menu } from 'antd';
+import { HomeOutlined } from '@ant-design/icons'; // Import the desired icon
 import { useState } from 'react';
 import { Button, Menu, Layout, Popconfirm } from 'antd';
 import { UserRole } from '../../models/user';
@@ -64,8 +67,10 @@ function NavMenu({ pseudoRoute, selected } : { pseudoRoute?: { title: string, ke
 
     return (
         <Header className="site-layout-background" style={{ padding: 0, backgroundColor: 'white' }}>
+             <HomeOutlined style={{ marginRight: '8px' }} />
             <div style={{ float: 'left', margin: '0px 24px', height: '100%', fontFamily: 'tesla', fontSize: '30px' }}>
-                EXCO
+            <img src="../../../repo-images/logo_192x192.png" alt="Logo" style={{ height: '30px', marginRight: '8px' }} />
+                EduQuiz
             </div>
             <div style={{ float: 'right', margin: '0px 16px' }}>
                 {
@@ -77,7 +82,7 @@ function NavMenu({ pseudoRoute, selected } : { pseudoRoute?: { title: string, ke
                     ) : (
                         <>
                             <Popconfirm
-                                title="Are you sure to log out?"
+                                title="Are you sure you want to log out?"
                                 onConfirm={logMeOut}
                                 okText="Yes"
                                 cancelText="No"
