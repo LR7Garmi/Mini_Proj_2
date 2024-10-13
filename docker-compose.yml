@@ -20,7 +20,7 @@ services:
     ports:
       - $NODE_LOCAL_PORT:$NODE_DOCKER_PORT
     environment:
-      - DB_URL=mongodb://mongodb:${MONGODB_DOCKER_PORT}/
+      - DB_URI=$DB_URI
       - DB_NAME=$DB_NAME
       - JWT_SECRET=$JWT_SECRET
       - PORT=$NODE_DOCKER_PORT

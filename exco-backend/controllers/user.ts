@@ -34,11 +34,12 @@ export class UserService {
         @bodyValue('password',  true, { convertTo: String, validate: MinLength(4) }) password:  string,
         @bodyValue('role',      true, { convertTo: Number, validate: ValidRole    }) role:      number
     ) {
+        console.log('Registering user', firstName, lastName, email, password, role);    
         const res = await UserOps.create({
             firstName, lastName,
             email, password, role
         });
-
+        
         return res;
     }
 
